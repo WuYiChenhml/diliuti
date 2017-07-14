@@ -1,5 +1,5 @@
 const loadAllItems = require('./loadAllItems.js');
-module.exports = function main(input) {   
+module.exports = function main(inputs) {   
     var item;  
     var item_list=[];      
     var list='***<没钱赚商店>购物清单***';  
