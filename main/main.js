@@ -1,5 +1,7 @@
+const loadAllItems = require('./loadAllItems.js');
 
-function printInventory(inputs) {
+module.exports = function main(inputs) {
+
     var allItemInfo = countProduct(inputs);
     printResult(allItemInfo);
 }
