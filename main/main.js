@@ -17,7 +17,7 @@ function printInventory(inputs) {
      } 
  
  
-     resultString += '\n----------------------\n总计:' + sum.toFixed(2) + '(元)'; 
+     resultString += '\n----------------------\n总计：' + sum.toFixed(2) + '(元)'; 
      resultString += '\n**********************'; 
  
  
@@ -53,8 +53,8 @@ function printInventory(inputs) {
  
  
  function getItemMessage(item) { 
-     return '名称:' + item.name + 
-         ',数量:' + item.count + item.unit + 
-         ',单价:' + item.price.toFixed(2) + 
-         '(元),小计:' + item.getCost().toFixed(2) + '(元)'; 
+     return '名称：' + item.name + 
+         '，数量：' + item.count + item.unit + 
+         '，单价：' + item.price.toFixed(2) + 
+         '(元)，小计：' + item.getCost().toFixed(2) + '(元)'; 
 } 
