@@ -1,4 +1,4 @@
-function loadAllItems() {
+module.exports = function loadAllItems() {
     return [
         {
             barcode: 'ITEM000000',
@@ -37,6 +37,6 @@ function loadAllItems() {
             price: 4.50
         }
     ];
-}
+};
 
 
