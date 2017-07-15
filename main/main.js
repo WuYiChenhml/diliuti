@@ -1,7 +1,7 @@
 function printInventory(inputs) {
         var allItemInfo = countProduct(inputs); 
      printResult(allItemInfo); 
- } 
+ 
  
  
  function printResult(allItemInfo) { 
@@ -58,3 +58,4 @@ function printInventory(inputs) {
          '，单价：' + item.price.toFixed(2) + 
          '(元)，小计：' + item.getCost().toFixed(2) + '(元)'; 
 } 
+}
