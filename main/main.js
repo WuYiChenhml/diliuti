@@ -52,4 +52,4 @@ function getItemMessage(item) {
         '(元)，小计：' + item.getCost().toFixed(2) + '(元)';
 }
  
-}
+
