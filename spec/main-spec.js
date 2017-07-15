@@ -1,9 +1,9 @@
-const printInventory = require('../main/main');
-
-describe('pos', () => {
+describe('pos', function () {
+    var allItems;
     var inputs;
 
-    beforeEach(() => {
+    beforeEach(function () {
+        allItems = loadAllItems();
         inputs = [
             'ITEM000000',
             'ITEM000000',
@@ -16,10 +16,11 @@ describe('pos', () => {
         ];
     });
 
-    it('should print correct text', () => {
+    it('should print correct text', function () {
 
+        spyOn(console, 'log');
 
-        let actualText = printInventory(inputs);
+        printInventory(inputs);
 
         var expectText =
             '***<没钱赚商店>购物清单***\n' +
@@ -30,6 +31,6 @@ describe('pos', () => {
             '总计：23.00(元)\n' +
             '**********************';
 
-        expect(actualText).toBe(expectText);
+          expect(console.log).toHaveBeenCalledWith(expectText);
     });
 });
