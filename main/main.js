@@ -51,6 +51,5 @@ function getItemMessage(item) {
         '，单价：' + item.price.toFixed(2) +
         '(元)，小计：' + item.getCost().toFixed(2) + '(元)';
 }
-    console.log("Debug Info");
-    return 'Hello World!';
+ 
 };
